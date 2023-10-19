@@ -1,0 +1,16 @@
+1   -   fazer uma limitação de horarios para a especialidade escolhida
+
+2   -   fazer a promise para que quando enviar os dados para agendamento fazer um pop up ou de sucesso ou de usuario não cadastrado
+
+3   -   fazer a promise para receber se tiver dados em tal hora e especialidae vá para a consulta de especialidae e hora
+
+4   -   colocar tambem rg em cadastro de paciente
+
+5   -   fazer um pop up para o botao de usuario para remover peguntar se quer sair ou mudar de senha 
+
+6   -   fazer a promise na tela de cadastrado de paciente ou sucesso ou falha ao cadastrar
+
+7   -   
+---------------------------testes de banco de dados com localstorage------------------------------------------------
+
+*   teste   fazer com que o que eu salve no agendamento vá no localstorage e vá para redução dos horarios e faça uma tabela na especialidade escolhida

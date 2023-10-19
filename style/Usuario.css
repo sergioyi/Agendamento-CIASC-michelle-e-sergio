@@ -1,0 +1,155 @@
+* {
+    font-family: 'Tanseek Árabe Moderno Médio', 'Arial Narrow', Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+   background-color: #F5F5F5;/*colocar a cor cinza no resto do corpo*/
+ }
+ aside{
+   background-color: #ffffff;
+   height:95vh;/*calcullo de cabeçalho com o corpo*/
+   width: 18vw;
+   float: left;
+ }
+ #ciasc{
+   margin-top:8px;
+   margin-left: 25px;
+ }
+ header{
+   color:#ffffff;
+   font-size: 20px;
+   background-color: #151C48;
+   height:5vh;/*calcullo de cabeçalho com o corpo*/
+   display: flex;
+   justify-content: space-between;
+ }
+ /*aqui está o tamho  e caracteristicas do botão*/
+ .opções-botao,
+ .imagem-opicao{
+   height: 25px;
+   width: 30px;
+   background-color: #151C48;
+   border: none;
+ }
+ .enfermagem,
+ .nutricao,
+ .fisioterapia,
+ .nova-consulta,
+ .pesquisa-consulta,
+ .cadastro-paciente,
+ .botao-voltar,
+ .botao-deslogar{
+     height: 55px;
+     width: 10vw;
+     border: none;
+     margin-left: 20px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     font-size: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .botao {
+     height: 55px;
+     width: 190px;
+     border: none;
+     margin-bottom: -15px;
+     border-radius: 5px;
+     font-size: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .novo-botao:hover,
+ .enfermagem:hover,
+ .nutricao:hover,
+ .fisioterapia:hover,
+ .nova-consulta:hover,
+ .pesquisa-consulta:hover,
+ .cadastro-paciente:hover,
+ .botao:hover, 
+ .botao-usuario:hover{
+     cursor: pointer;
+     transform: scale(1.05);
+ }
+ /*colocando as cores dos botoes coloridos*/
+ .nova-consulta{
+   background-color: #EA8D37;
+   color: #ffffff;
+ }
+ .pesquisa-consulta{
+   background-color: #F40404;
+   color: #ffffff;
+ }
+ .cadastro-paciente{
+   background-color: #868AA5;
+   color: #ffffff;
+ }
+ .nova-consulta {
+     margin-top: 40px;/*distânciar um pouco o primeiro para baixo*/
+ }
+ 
+ 
+ .emoji-fisioterapia,
+ .emoji-nutricao,
+ .emoji-enfermagem {/*tamanho dos emojis dos botões*/
+     height: 20px;
+     width: 20px;
+ }
+ main{
+   width: auto;/*largura da caixa azul*/
+   height: auto;/*tamanho da caixa azul*/
+   margin-right: 420px;/*margem a direita*/
+   border-radius: 15px;/*arestas aredontadas*/
+   margin-top: 28px;/*ver com o samuel se essa altura está boa, pq não vai dar para seguir a ideia do luciano de 8px*/
+   background-color: #151C48;
+   float: right;/*flutuar para a direita*/
+   display: flexbox;
+   justify-content: space-between;
+   
+ }
+ .foto{/*DESCOBRIR COMO DEIXAR A FOTO REDODA NA CAIXINHA */
+   height: 80px;
+   width: 80px;
+   border-radius: 100px;
+ }
+.cor-de-fundo-foto{/*posição da foto no main*/
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 100px;/*tamanho da moldura*/
+   width: 100px;/*largura da moldura da caira*/
+   border-radius: 12px;/*arestas da moldura*/
+   background-color: #fcfcfc;
+   display: flex;
+   justify-content: space-around;/*foto ficar no centro eixo x*/
+   align-items: center;/*foto ficar no centro eixo y*/
+ }
+ #mudar-senha{
+   margin-bottom: 15px;
+   margin-left: 30px;
+   border: none;
+   height:22px;
+   width:200px;/*isso aqui varea para cada tamanho de laragura que foi de defindo*/
+   border-radius: 7px;
+ }
+ input{
+  border: none;
+  height:32px;
+  /*isso aqui varea para cada tamanho de laragura que foi de defindo*/
+  border-radius: 7px;
+  padding-left: 10px;
+}
+ .botao-usuario{
+   margin-top: 150px;
+   margin-left: 20px;
+   gap: 400px;
+   height: 35px;
+   width: 110px;
+   background-color: #5563C1;
+   color: white;
+   border: none;
+   border-radius: 5px;
+ }

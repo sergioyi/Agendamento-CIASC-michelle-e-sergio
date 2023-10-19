@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Consulta</title>
+    <link rel="stylesheet" href="style/padrao.css">
+    <link rel="stylesheet" href="style/Inicio.css">
+</head>
+<body>
+  <style>
+    /*essa tag style é só para o botão de pesquisa do lado cdos input's diferente dos outros*/
+    .caixa-de-dentro{
+    display: flex;
+    flex-direction: row;
+  }
+  .linha1{
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+
+
+  </style>
+  <header>
+    <div id="ciasc"><strong> C . I . A . S . C</strong></div>
+    <a href="index-informacao-usuario.html"><img src="Imagens/opcao.png" alt="opções" class="imagem-opicao"></a> 
+  </header><!--este botao tem que levar um pop up-->
+  <aside>
+    <a href="index-nova-consulta.html">
+      <button type="button" class="nova-consulta"><strong>Novo Agendamento</strong></button></a>
+    <br>
+    <a href="index-pesquisa-consulta.html">
+      <button type="button" class="pesquisa-consulta"><strong>Pesquisa Consulta</strong></button></a>
+    <br>
+    <a href="index-cadastro-paciente.html"><button type="button" class="cadastro-paciente"><strong>Cadastro
+          Paciente</strong></button></a>
+    <br>
+    <a href="index-horario-fisioterapia.html"><button type="button" class="fisioterapia"><img
+          src="Imagens/fisioterapia.png" alt="fisioterapia" class="
+          emoji-fisioterapia"><strong> Fisioterapia</strong>
+      </button></a>
+    <br>
+    <a href="index-hoario-nutricao.html"><button class="nutricao"><img src="Imagens/nutriçao.png"
+          alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button></a>
+    <br>
+    <a href="index-horario-enfermagem.html"><button class="enfermagem"><img
+          src="Imagens/enfermagem.png" alt="enfermagem" class="emoji-enfermagem"><strong>
+          Enfermagem</strong></button></a>
+    <br>
+  </aside>
+    <div class="centralizar">
+    <form action="" method="get"></form><!-- colocar aqui o JAVA-->
+    <main>
+
+
+
+
+
+    <div class="caixa-de-dentro"><!--aquo é para 0s input1s ficarem juntos com o botão-->
+    <div class="linha1"><!--aqui é para deixar o nome ao lado do cpf -->
+      <div id="caixa-nome"> 
+    <label class="nome" for="nome">Nome</label>
+      <br>
+        <input type="search" id="nome" name="Nome">
+      </div> 
+      <div id="caixa-cpf">
+    <label class="cpf" for="cpf">CPF</label>
+        <br>
+          <input type="search" id="cpf" name="cpf" placeholder="123-456-789-10"><!--AQUI TEM QUE SER TYPE NUMBER-->
+          </div>
+    </div><!--aqui finaliza a linha 1-->
+    <button type="submit" id="botao" value="submit">Buscar</button>
+    </main>
+  </form>
+  </div><!--fim do centarlizar-->
+  
+  <br />
+  <div class="centralizar">
+    <table id="tabela">
+      <thead id="thead">
+        <tr>
+          <th>Nome:</th>
+          <th>cpf:</th>
+          <th>data consulta:</th>
+          <th>Aluno 1:</th>
+          <th>Aluno 2:</th>
+          <th>Especialidade:</th>
+        </tr>
+      </thead>
+      <tbody id="corpo">
+        <!--AQUI VAI FICAR A CADA UM DOS DADOS RECEBIDOS DOS INPUT'S-->
+      </tbody>
+    </table>
+  </div>
+  <script src="js/Pesquisa.js"></script><!--Esse script é só um exemplo de como funciona-->
+</body>
+</html>

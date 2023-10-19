@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cadastro Paciente</title>
+  <link rel="stylesheet" href="style/padrao.css">
+  <link rel="stylesheet" href="style/Inicio.css">
+</head>
+
+<body>
+  <header>
+    <div id="ciasc"><strong> C . I . A . S . C</strong></div>
+    <a href="index-informacao-usuario.html"><img src="Imagens/opcao.png" alt="opções" class="imagem-opicao"></a> 
+  </header><!--este botao tem que levar um pop up-->
+  <aside>
+    <a href="index-nova-consulta.html">
+      <button type="button" class="nova-consulta"><strong>Novo Agendamento</strong></button></a>
+    <br>
+    <a href="index-pesquisa-consulta.html">
+      <button type="button" class="pesquisa-consulta"><strong>Pesquisa Consulta</strong></button></a>
+    <br>
+    <a href="index-cadastro-paciente.html"><button type="button" class="cadastro-paciente"><strong>Cadastro
+          Paciente</strong></button></a>
+    <br>
+    <a href="index-horario-fisioterapia.html"><button type="button" class="fisioterapia"><img
+          src="Imagens/fisioterapia.png" alt="fisioterapia" class="
+          emoji-fisioterapia"><strong> Fisioterapia</strong>
+      </button></a>
+    <br>
+    <a href="index-hoario-nutricao.html"><button class="nutricao"><img src="Imagens/nutriçao.png"
+          alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button></a>
+    <br>
+    <a href="index-horario-enfermagem.html"><button class="enfermagem"><img
+          src="Imagens/enfermagem.png" alt="enfermagem" class="emoji-enfermagem"><strong>
+          Enfermagem</strong></button></a>
+    <br>
+  </aside>
+  <!--AQUUI ESTÁ A DIFERENÇA DO CADASTRO DE NOVA CONSULTA-->
+  <div class="centralizar">
+    <main>
+        <div class="caixa-de-dentro">
+          <form action="" method="post"><!--AQUI É PARA COLOCAR O JAVA-->
+          <div class="linha1">
+            <!--aqui é para deixar o nome ao lado do email-->
+            <div id="caixa-nome">
+              <label class="nome" for="nome">Nome</label>
+              <br>
+              <input type="text" id="nome" name="Nome" required>
+            </div>
+            <div id="caixa-nascimento">
+              <label class="nascimento" for="nascimento">Data Nascimento</label>
+              <br>
+              <input type="date" id="nascimento" name="data de nascimento">
+            </div>
+          </div>
+          <!--aqui termina a lina 1-->
+          <div class="linha2">
+            <!--aqui é para deixar o nome ao lado do email-->
+            <div id="caixa-cpf">
+              <label class="cpf" for="cpf">CPF</label>
+              <br>
+              <input type="text" id="cpf" name="cpf">
+            </div>
+            <div id="caixa-idade">
+              <label class="idade" for="idade">Idade</label>
+              <br>
+              <input type="number" id="idade" name="idade" required>
+            </div>
+
+            <div id="caixa-endereco">
+              <label class="telefone"for="endereco">Endereço</label>
+              <br>
+              <input type="" id="endereco" name="Endereco">
+            </div>
+
+          </div>
+          <!--aqui termina a linha 2-->
+          <div class="linha3">
+            <!--aqui é para deixar o nome ao lado do email-->
+            <div id="caixa-email">
+              <label class="e-mail" for="email">E-mail</label>
+              <br>
+              <input type="email" id="email" name="email" >
+            </div>
+
+            <div id="caixa-telefone">
+              <label class="telefone" id="tel1" for="telefone">Telefone 1</label>
+              <br>
+              <input type="tel" id="telefone" name="Telefone 1" required/>
+            </div>
+            <div id="caixa-telefone1">
+              <label class="telefone" id="tel2" for="telefone1">Telefone 2</label>
+              <br>
+              <input type="tel" id="telefone1" name="telefone2">
+            </div>
+
+          </div>
+          <!--aqui termina a linha 3-->
+          <button type="submit" id="botao">Cadastrar</button>
+          </form>
+        </div>
+    </main>
+  </div>
+</body>
+
+</html>

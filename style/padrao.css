@@ -1,0 +1,396 @@
+.centralizar {
+  /*ele centraliza o main*/
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 900px;
+  /*ARRUMADO*/
+  height: auto;
+  /*arrumar aqui para quando houver alteração da div com os negocios a main acompanhar em relação a altura*/
+  border-radius: 5px;
+  margin-top: 32px;
+  padding-left: 60px;
+  /*isso é a distância dos objetos da berada esquerda da div, só para não ficar muito próximo*/
+  background-color: #151C48;
+  color: white;
+}
+
+.linha1 {
+  display: flex;
+  /*aqui é para os inputs ficarem um do lado do oputro na linha*/
+  gap: 20px;
+  width: 600px;
+}
+
+.linha2 {
+  display: flex;
+  /*aqui é para os inputs ficarem um do lado do oputro na linha*/
+  gap: 20px;
+}
+
+.linha3 {
+  display: flex;
+  /*aqui é para os inputs ficarem um do lado do oputro na linha*/
+  gap: 20px;
+}
+
+.caixa-de-dentro {
+  /*aqui é para vc colocar os itens da caixa em ordem separada do botão*/
+  display: flex;
+  /*aqui é para colocar as pequenas caixas de itens um do lado do outro*/
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+input {
+  border: none;
+  height: 32px;
+  /*isso aqui varea para cada tamanho de laragura que foi de defindo*/
+  border-radius: 7px;
+  padding-left: 10px;
+}
+
+#nome {
+  width: 400px;
+}
+
+#email {
+  width: 350px;
+}
+
+#nascimento {
+  width: 150px;
+}
+
+#cpf {
+  width: 200px;
+}
+
+#telefone {
+  width: 200px;
+}
+
+#especialidade {
+  width: 400px;
+}
+
+#data {
+  width: 130px;
+}
+
+#hora {
+  width: 130px;
+}
+
+/*esse é da tela de cadastro de paciente*/
+#idade {
+  width: 100px;
+}
+
+.botao {
+  /*o id é para o botão de pesquisa*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #6176C1;
+  color: #ffffff;
+}
+
+#botao {
+  margin-top: 35px;
+  background-color: #6176C1;
+  color: #ffffff;
+  height: 45px;
+  width: 150px;
+  border: none;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-data:hover,
+#botao:hover,
+.botao1 {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*aqui é para os de segunda linha dar uma margin top*/
+#caixa-cpf,
+#caixa-telefone,
+#caixa-telefone1,
+#caixa-especialidade,
+#caixa-data,
+#caixa-hora,
+#caixa-nascimento,
+#caixa-idade,
+#caixa-nome,
+#caixa-email,
+#caixa-endereco {
+  /*aqui é para distânciar essa caixa das de cima*/
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+/*aqui fica a tabel de pesquisa**/
+table {
+  background-color: #151C48;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+  border-radius: 5px;
+  width: 800px;
+}
+
+
+td {
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aqui fica o botao de data*/
+/*BOTÕES DA DATA*/
+
+/*aqui está aparte dos tickets que serão reduzidos*/
+
+.arrTicket {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#botao-data,
+.botao1 {
+  background-color: #6176C1;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: -15px;
+  /*distância do botão de baixo*/
+  height: 55px;
+  width: 190px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#botao-data {
+  background-color: #314fbb;
+  color: #ffffff;
+}
+
+.hora {
+  padding-top: 12px;
+  /*distânciar a hora do topo*/
+  width: 190px;
+  /*mesma que o botão*/
+  height: 40px
+    /*menos que o tamanho do botão para que haja espaço para os ticket*/
+}
+
+/*titulo de cada uma das especialidades*/
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  AQUI ESTÁ A TELA DE USUARIO*/
+#foto {
+  /*DESCOBRIR COMO DEIXAR A FOTO REDODA NA CAIXINHA */
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+}
+
+#cor-de-fundo-foto {
+  /*posição da foto no main*/
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  /*tamanho da moldura*/
+  width: 100px;
+  /*largura da moldura da caira*/
+  border-radius: 12px;
+  /*arestas da moldura*/
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: space-around;
+  /*foto ficar no centro eixo x*/
+  align-items: center;
+  /*foto ficar no centro eixo y*/
+}
+
+.botao-usuario {
+  margin: 5px;
+  gap: 400px;
+  height: 35px;
+  width: 110px;
+  background-color: #5563C1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#nome-usuario {
+  margin-left: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*AQUI ESTA A PARTE DO VERSÃO MOBILE*/
+
+@media(max-width: 720px) {
+
+  main {
+    width: 90vw;
+    height: auto;
+    /*5, 15, 3, 72*/
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    /*float: right;*/
+    display: flex;
+    justify-items: left;
+    padding-left: 20px;
+
+  }
+
+  #main-fisioterapia {
+    height: 450px;
+  }
+
+  #main-nutricao {
+    height: 520px;
+
+  }
+
+  .botao {
+    margin-left: 0px;
+    margin-top: 40px;
+    width: 90px;
+  }
+
+  .linha1,
+  .linha2,
+  .linha3 {
+    display: block;
+    /*aqui é para os inputs ficarem um do lado do oputro na linha*/
+  }
+
+  #nome {
+    width: 80vw;
+  }
+
+  #email {
+    width: 80vw;
+  }
+
+  #nascimento {
+    width: 80vw;
+  }
+
+  #cpf {
+    width: 80vw;
+  }
+
+  #telefone {
+    width: 80vw;
+  }
+
+  #telefone1 {
+    width: 80vw;
+
+  }
+
+  #especialidade {
+    width: 80vw;
+  }
+
+  #data {
+    width: 80vw;
+  }
+
+  #hora {
+    width: 80vw;
+  }
+
+  /*esse é da tela de cadastro de paciente*/
+  #idade {
+    width: 80vw;
+  }
+
+  #endereco {
+    width: 80vw;
+  }
+}
