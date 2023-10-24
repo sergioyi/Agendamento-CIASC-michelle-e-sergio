@@ -1,8 +1,10 @@
-1   -   fazer uma limitação de horarios para a especialidade escolhida
+1   -   fazer uma extenção da tela de agendamento para que dependento da especialidade
+        fazer dois inputs de alunos paraatender
 
-2   -   fazer a promise para que quando enviar os dados para agendamento fazer um pop up ou de sucesso ou de usuario não cadastrado
+2   -   tem que fazer uma requisição de especialidades e horarios para caso haja mais especilidades
 
-3   -   fazer a promise para receber se tiver dados em tal hora e especialidae vá para a consulta de especialidae e hora
+3   -   fazer o envio para receber se tiver dados em tal hora e especialidae vá para 
+        a consulta de especialidae e hora especifica
 
 4   -   colocar tambem rg em cadastro de paciente
 

@@ -3,7 +3,7 @@
 
 
 
-
+///aqui fica a redução dos tickets
 
 let ticket1 = document.getElementById('ticket1');
 let ho1 = document.getElementById('ho1');

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style/Inicio.css">
 </head>
 
-<body onload="mostrar()">
+<body>
   <style>
     main {
       height: 300px;
@@ -22,27 +22,21 @@
       margin: 0;
       box-sizing: border-box;
     }
-
-
-
     #fade {
-      position: fixed;
-      /*ficara por cima de todos*/
+      position: fixed;/*ficara por cima de todos*/
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.6);
-      z-index: 5;
-      /*é para ficar a cima de todos os outros arquivos*/
-
+      z-index: 5;/*é para ficar a cima de todos os outros arquivos*/
     }
 
     #modal {
       position: fixed;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);/**mudar a margem do conteudo*/
       z-index: 10;
       color: black;
       max-width: 90%;
@@ -50,10 +44,8 @@
 
     #modal.hide,
     #fade.hide {
-      opacity: 0;
-      /*paar sumir com o modale fade*/
-      pointer-events: none;
-      /*é para deixar sem eventos seestiver escooondido*/
+      opacity: 0;/*paar sumir com o modale fade*/
+      pointer-events: none;/*é para deixar sem eventos seestiver escooondido*/
     }
 
     #fade,
@@ -128,19 +120,24 @@
           </button>
         </div>
         <!--FIM  pega de 4 em 4 para fazer um colona-->
-        input type="date" name="date1" id="botao-data">
+        <input type="date" name="date1" id="botao-data">
         </form>
       </div>
       <!--aqui está o fim do caixa azul-->
     </main>
 
-    <button type="button" id="open-modal">click</button>
+    <button type="button" id="open-modal" onclick="mostrar()">click</button><!-- chamando mostrar -->
 
     <!--AQUI ESTÁ O  QUE ESCURECE A TELA -->
     <div id="fade" class="hide"></div>
     <!--aqui é para a opacidade-->
     <div id="modal" class="hide">
       <table id="tabela">
+        <thead>
+          <th>Nome</th>
+          <th>Especialidade</th>
+          <th>Hora</th>
+        </thead>
         <tbody id="corpo">
           <!--  AQUI FICA A TABELA QUE VAI PUXAR DOLOCALSTORAGE -->
         </tbody>
@@ -154,7 +151,6 @@
     //  aqui tem que criar o modal
 
     const openModalButton = document.getElementById('open-modal');
-    const closeModalButton = document.getElementById('close-modal');
     const modal = document.getElementById('modal');
     const fade = document.getElementById('fade');
 
@@ -164,7 +160,7 @@
       fade.classList.toggle("hide");
     }
 
-    [openModalButton, closeModalButton, fade].forEach((el) => {//todos eles tem o evento de click.e cada um deles tem o el por serem elementos
+    [openModalButton, fade].forEach((el) => {//todos eles tem o evento de click.e cada um deles tem o el por serem elementos
       el.addEventListener("click", () => toggleModal());
     });
 

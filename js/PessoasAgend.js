@@ -1,4 +1,4 @@
-//  aqui está o retorno
+//  aqui está o retorno do modal de cada especialidde
 
 let vAgendamento = [];
 let vEspecialidade = [];
@@ -6,12 +6,14 @@ let vHora = [];
 let vData = [];
 
 function mostrar() {
-  if (localStorage.agendamento || localStorage.especialidade) {
+  if (localStorage.agendamento) {
     vAgendamento = JSON.parse(localStorage.getItem('agendamento'));
-    vEspecialiade = JSON.parse(localStorage.getItem('especialidade'));
+    vEspecialidade = JSON.parse(localStorage.getItem('especialidade'));
+    vHora = JSON.parse(localStorage.getItem('hora'));
   }
-  let linha = document.createElement("tr");
+  corpo.innerHTML = ""//limpar para receber novos valores
   for (var i in vAgendamento) {
+    let linha = document.createElement("tr");//criar uma linha para cada item dentro do array
     //aqui está o nome
     let nomeItem = document.createElement("td");
     nomeItem.innerText = vAgendamento[i];
@@ -24,7 +26,7 @@ function mostrar() {
     linha.appendChild(especilidadeItem);
     corpo.appendChild(linha);
     
-    //aqui está a especialidade
+    //aqui está a hora
     let horaItem = document.createElement("td");
     horaItem.innerText = vHora[i];
     linha.appendChild(horaItem);
