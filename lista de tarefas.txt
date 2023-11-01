@@ -1,7 +1,7 @@
 1   -   fazer uma extenção da tela de agendamento para que dependento da especialidade
-        fazer dois inputs de alunos paraatender
+        fazer dois inputs de alunos para atender
 
-2   -   tem que fazer uma requisição de especialidades e horarios para caso haja mais especilidades
+2   -   tem que fazer uma requisição de especialidades e horarios. Pois caso haja mais especilidades futuramentes
 
 3   -   fazer o envio para receber se tiver dados em tal hora e especialidae vá para 
         a consulta de especialidae e hora especifica

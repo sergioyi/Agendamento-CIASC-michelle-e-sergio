@@ -71,28 +71,14 @@
             <input type="search" id="cpf" name="cpf" placeholder="123-456-789-10"><!--AQUI TEM QUE SER TYPE NUMBER-->
           </div>
         </div><!--aqui finaliza a linha 1-->
-        <button type="submit" id="botao" value="submit">Buscar</button>
+        <button type="submit" id="botao" value="submit" onclick="criarTabela()">Buscar</button>
     </main>
     </form>
   </div><!--fim do centarlizar-->
 
   <br />
-  <div class="centralizar">
-    <table id="tabela">
-      <thead id="thead">
-        <tr>
-          <th>Nome:</th>
-          <th>cpf:</th>
-          <th>data consulta:</th>
-          <th>Aluno 1:</th>
-          <th>Aluno 2:</th>
-          <th>Especialidade:</th>
-        </tr>
-      </thead>
-      <tbody id="corpo">
-        <!--AQUI VAI FICAR A CADA UM DOS DADOS RECEBIDOS DOS INPUT'S-->
-      </tbody>
-    </table>
+  <div id="centralizar">
+ 
   </div>
   <script src="js/Pesquisa.js"></script><!--Esse script é só um exemplo de como funciona-->
 </body>

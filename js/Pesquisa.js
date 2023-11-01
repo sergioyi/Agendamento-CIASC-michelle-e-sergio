@@ -18,6 +18,7 @@ let vetor = [];
 //6- coloca os td's na tr 
 //7- coloca a tr na tbody
 //8- limpa os campos de texto
+/*
 function adicionar() {
   fetch(  ,{
     method:GET,
@@ -37,15 +38,57 @@ function adicionar() {
   })
 }
 botao.addEventListener("click", adicionar);//quando clicar é para buscar na API
+*/
 
-//      Arrumando o objetojson que faz a requisição
-/*
-const ObjPesquisa = {
-  "nome":,
-  "cpf":,
-  "data-consulta":,
-  "aluno1":,
-  "aluno2":,
-  "esecialidade":
+//fazendo a tabela
+function criarTabela(){
+  const centralizaTabela = document.getElementById("centralizar");
+  //const centralizaTabela = document.createElement("div");//tenta tirar isso e chamar o criatebela para a div ja existente
+  centralizaTabela.className = "centralizar";
+  const criaTabela = document.createElement("table");//ver se precissa colocar a class tabela
+  centralizaTabela.appendChild(criaTabela);
+  const criaCabecalho = document.createElement("thead");
+  criaTabela.appendChild(criaCabecalho);
+  const criaLinha = document.createElement("tr");
+  criaCabecalho.appendChild(criaLinha);
+  const criaNome = document.createElement("th");
+  criaNome.innerText = "Nome:";
+  criaLinha.appendChild(criaNome);
+  const criaCpf = document.createElement("th");
+  criaCpf.innerText = "CPF:";
+  criaLinha.appendChild(criaCpf);
+  const criaDataConsulta = document.createElement("th");
+  criaDataConsulta.innerText = "data consulta:";
+  criaLinha.appendChild(criaDataConsulta);
+  const criaAluno1 = document.createElement("th");
+  criaAluno1.innerHTML = "Aluno 1:";
+  criaLinha.appendChild(criaAluno1);
+  const criaAluno2 = document.createElement("th");
+  criaAluno2.innerText = "Aluno 2:";
+  criaLinha.appendChild(criaAluno2);
+  const criaEspecialidade = document.createElement("th");
+  criaEspecialidade.innerText = "Especialidade:";
+  criaLinha.appendChild(criaEspecialidade);
+
+  //criando o corpo da tabela
+
+  const criaTbody = document.createElement("tbody");
+  //dentro dele fixca as requisições
 }
+/*    REMOVI ISSO DO HTML DA PESQUISA 
+    <table id="tabela">
+      <thead id="thead">
+        <tr>
+          <th>Nome:</th>
+          <th>cpf:</th>
+          <th>data consulta:</th>
+          <th>Aluno 1:</th>
+          <th>Aluno 2:</th>
+          <th>Especialidade:</th>
+        </tr>
+      </thead>
+      <tbody id="corpo">
+        <!--AQUI VAI FICAR A CADA UM DOS DADOS RECEBIDOS DOS INPUT'S-->
+      </tbody>
+    </table>
 */

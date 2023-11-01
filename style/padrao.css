@@ -6,42 +6,28 @@
 
 main {
   width: 900px;
-  /*ARRUMADO*/
+  max-width: 85%;
   height: auto;
-  /*arrumar aqui para quando houver alteração da div com os negocios a main acompanhar em relação a altura*/
   border-radius: 5px;
   margin-top: 32px;
-  padding-left: 60px;
-  /*isso é a distância dos objetos da berada esquerda da div, só para não ficar muito próximo*/
+  /*padding-left: 60px;*/
   background-color: #151C48;
   color: white;
-}
-
-.linha1 {
+  /*estou mexendo aqui embaixo*/
   display: flex;
-  /*aqui é para os inputs ficarem um do lado do oputro na linha*/
-  gap: 20px;
-  width: 600px;
-}
+  padding-left: 60px;
+  padding-right: 60px;
+  flex-direction: column;
 
-.linha2 {
-  display: flex;
-  /*aqui é para os inputs ficarem um do lado do oputro na linha*/
-  gap: 20px;
 }
-
+.linha1,
+.linha2,
 .linha3 {
   display: flex;
-  /*aqui é para os inputs ficarem um do lado do oputro na linha*/
+  /*aqui é para os inputs ficarem um do lado do outro na linha*/
   gap: 20px;
 }
 
-.caixa-de-dentro {
-  /*aqui é para vc colocar os itens da caixa em ordem separada do botão*/
-  display: flex;
-  /*aqui é para colocar as pequenas caixas de itens um do lado do outro*/
-  flex-direction: column;
-}
 
 
 
@@ -60,7 +46,7 @@ input {
   height: 32px;
   /*isso aqui varea para cada tamanho de laragura que foi de defindo*/
   border-radius: 7px;
-  padding-left: 10px;
+  padding-left: 10px;/*distanci do conteudo de dentro*/
 }
 
 #nome {
