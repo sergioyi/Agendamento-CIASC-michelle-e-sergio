@@ -1,4 +1,4 @@
-//  aqui está o retorno do modal de cada especialidde
+//  aqui está o retorno do modal de cada especialidde é pego do agendamendo os dados e é coloado em especialidade(por enquando fisioterapia)
 
 let vAgendamento = [];
 let vEspecialidade = [];
