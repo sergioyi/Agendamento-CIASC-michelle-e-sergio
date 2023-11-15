@@ -37,27 +37,19 @@
     <a href="index-cadastro-paciente.html"><button type="button" class="cadastro-paciente"><strong>Cadastro
           Paciente</strong></button></a>
     <br>
-    <a href="index-horario-fisioterapia.html"><button type="button" class="fisioterapia"><img
-          src="Imagens/fisioterapia.png" alt="fisioterapia" class="
-          emoji-fisioterapia"><strong> Fisioterapia</strong>
-      </button></a>
+    <button type="button" class="fisioterapia" onclick="HorariosDisponiveis(1)" ><img src="Imagens/fisioterapia.png"
+       alt="fisioterapia" class="emoji-fisioterapia"><strong> Fisioterapia</strong></button>
     <br>
-    <a href="index-hoario-nutricao.html"><button class="nutricao"><img src="Imagens/nutriçao.png" alt="nutricao"
-          class="emoji-nutricao"><strong> Nutrição</strong></button></a>
+   <button type="button" class="nutricao" onclick="HorariosDisponiveis(2)" ><img src="Imagens/nutriçao.png"
+      alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button>
     <br>
-    <a href="index-horario-enfermagem.html"><button class="enfermagem"><img src="Imagens/enfermagem.png"
-          alt="enfermagem" class="emoji-enfermagem"><strong>
-          Enfermagem</strong></button></a>
+    <button type="button" class="enfermagem" onclick="HorariosDisponiveis(3)" ><img src="Imagens/enfermagem.png" 
+      alt="enfermagem" class="emoji-enfermagem"><strong>Enfermagem</strong></button>
     <br>
   </aside>
   <div class="centralizar">
     <form action="" method="get"></form><!-- colocar aqui o JAVA-->
     <main>
-
-
-
-
-
       <div class="caixa-de-dentro"><!--aquo é para 0s input1s ficarem juntos com o botão-->
         <div class="linha1"><!--aqui é para deixar o nome ao lado do cpf -->
           <div id="caixa-nome">
@@ -78,7 +70,9 @@
 
   <br />
   <div id="centralizar">
- 
+ <div id="tabela">
+   <!--AQUI VAI VOLTAR A TABELA-->
+ </div>
   </div>
   <script src="js/Pesquisa.js"></script><!--Esse script é só um exemplo de como funciona-->
 </body>

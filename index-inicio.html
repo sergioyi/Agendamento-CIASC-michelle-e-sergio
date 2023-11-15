@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="style/Inicio.css">
-  <link name="theme-color" content="#f9f9f9"/>
-  <link rel="apple-touch-1con" href="./Imagens/Foto.jpg"/>
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="cannonical" href="https://pwa-ciasc-recpcionista.sergioan.repl.co/"/>
 </head>
 <body>
-  <!--ISSO QUE FAZ A DIFERENÇA-->
-  <script src="./serviceWorker.js"></script>
-  <!---->
     <header>
     <div id="ciasc"><strong> C . I . A . S . C</strong></div>
     <a href="index-informacao-usuario.html"><img src="Imagens/opcao.png" alt="opções" class="imagem-opicao"></a>
-  </header><!--este botao tem que levar um pop up-->
+  </header>
   <aside>
     <a href="index-nova-consulta.html">
       <button type="button" class="nova-consulta"><strong>Novo Agendamento</strong></button></a>
@@ -29,17 +22,14 @@
     <a href="index-cadastro-paciente.html"><button type="button" class="cadastro-paciente"><strong>Cadastro
           Paciente</strong></button></a>
     <br>
-    <a href="index-horario-fisioterapia.html"><button type="button" class="fisioterapia"><img
-          src="Imagens/fisioterapia.png" alt="fisioterapia" class="
-          emoji-fisioterapia"><strong> Fisioterapia</strong>
-      </button></a>
+    <button type="button" class="fisioterapia" onclick="HorariosDisponiveis(1)" ><img src="Imagens/fisioterapia.png"
+       alt="fisioterapia" class="emoji-fisioterapia"><strong> Fisioterapia</strong></button>
     <br>
-    <a href="index-hoario-nutricao.html"><button class="nutricao"><img src="Imagens/nutriçao.png"
-          alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button></a>
+   <button type="button" class="nutricao" onclick="HorariosDisponiveis(2)" ><img src="Imagens/nutriçao.png"
+      alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button>
     <br>
-    <a href="index-horario-enfermagem.html"><button class="enfermagem"><img
-          src="Imagens/enfermagem.png" alt="enfermagem" class="emoji-enfermagem"><strong>
-          Enfermagem</strong></button></a>
+    <button type="button" class="enfermagem" onclick="HorariosDisponiveis(3)" ><img src="Imagens/enfermagem.png" 
+      alt="enfermagem" class="emoji-enfermagem"><strong>Enfermagem</strong></button>
     <br>
   </aside>
 </body>

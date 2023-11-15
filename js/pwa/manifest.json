@@ -1,0 +1,17 @@
+{
+  "name": "C . I . A . S . C",
+  "short_name": "ciasc",
+  "scope": "/index.html",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#151C48",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./Imagens/Foto.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512 "
+    }
+  ]
+}

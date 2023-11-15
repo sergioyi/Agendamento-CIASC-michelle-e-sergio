@@ -10,13 +10,10 @@
 </head>
 
 <body>
-
-
   <header>
     <div id="ciasc"><strong> C . I . A . S . C</strong></div>
     <img src="Imagens/opcao.png" alt="opções" class="imagem-opicao" onclick="Usuario()">
-  </header>
-  <!--este botao tem que levar um pop up-->
+  </header><!--este botao tem que levar um pop up-->
   <aside>
     <a href="index-nova-consulta.html">
       <button type="button" class="nova-consulta"><strong>Novo Agendamento</strong></button></a>
@@ -27,23 +24,21 @@
     <a href="index-cadastro-paciente.html"><button type="button" class="cadastro-paciente"><strong>Cadastro
           Paciente</strong></button></a>
     <br>
-    <button type="button" class="fisioterapia" id="1" onclick="HorariosDisponiveis(1)"><img
-        src="Imagens/fisioterapia.png" alt="fisioterapia" class="emoji-fisioterapia"><strong>
-        Fisioterapia</strong></button>
+    <button type="button" class="fisioterapia" onclick="HorariosDisponiveis(1)" ><img src="Imagens/fisioterapia.png"
+       alt="fisioterapia" class="emoji-fisioterapia"><strong> Fisioterapia</strong></button>
     <br>
-    <button type="button" class="nutricao" id="2" onclick="HorariosDisponiveis(2)"><img src="Imagens/nutriçao.png"
-        alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button>
+   <button type="button" class="nutricao" onclick="HorariosDisponiveis(2)" ><img src="Imagens/nutriçao.png"
+      alt="nutricao" class="emoji-nutricao"><strong> Nutrição</strong></button>
     <br>
-    <button type="button" class="enfermagem" id="3" onclick="HorariosDisponiveis(3)"><img src="Imagens/enfermagem.png"
-        alt="enfermagem" class="emoji-enfermagem"><strong>Enfermagem</strong></button>
+    <button type="button" class="enfermagem" onclick="HorariosDisponiveis(3)" ><img src="Imagens/enfermagem.png" 
+      alt="enfermagem" class="emoji-enfermagem"><strong>Enfermagem</strong></button>
     <br>
   </aside>
   <!--AQUUI ESTÁ A DIFERENÇA DO CADASTRO DE NOVA CONSULTA-->
   <div class="centralizar">
     <main>
-      <div class="caixa-de-dentro">
-        <form action="" method="post">
-          <!--AQUI É PARA COLOCAR O JAVA-->
+        <div class="caixa-de-dentro">
+          <form action="" method="post"><!--AQUI É PARA COLOCAR O JAVA-->
           <div class="linha1">
             <!--aqui é para deixar o nome ao lado do email-->
             <div id="caixa-nome">
@@ -72,7 +67,7 @@
             </div>
 
             <div id="caixa-endereco">
-              <label class="telefone" for="endereco">Endereço</label>
+              <label class="telefone"for="endereco">Endereço</label>
               <br>
               <input type="" id="endereco" name="Endereco">
             </div>
@@ -84,13 +79,13 @@
             <div id="caixa-email">
               <label class="e-mail" for="email">E-mail</label>
               <br>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" >
             </div>
 
             <div id="caixa-telefone">
               <label class="telefone" id="tel1" for="telefone">Telefone 1</label>
               <br>
-              <input type="tel" id="telefone" name="Telefone 1" required />
+              <input type="tel" id="telefone" name="Telefone 1" required/>
             </div>
             <div id="caixa-telefone1">
               <label class="telefone" id="tel2" for="telefone1">Telefone 2</label>
@@ -101,14 +96,78 @@
           </div>
           <!--aqui termina a linha 3-->
           <button type="submit" id="botao">Cadastrar</button>
-        </form>
-      </div>
+          </form>
+        </div>
     </main>
     <div id="deslogar">
       <!--aqui vai ficar o campo de deslogar-->
     </div>
-  </div>
+    <!--AQUI ESTÁ O STYLE QUE DEFINE A APARENCIA DO MODAL-->
+    <style>
+      main {
+        height: 300px;
+      }
+  
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #fade {
+        position: fixed;/*ficara por cima de todos*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 5;/*é para ficar a cima de todos os outros arquivos*/
+      }
+  
+      #modal {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);/**mudar a margem do conteudo*/
+        z-index: 10;
+        color: black;
+        max-width: 90%;
+      }
+  
+      #modal.hide,
+      #fade.hide {
+        opacity: 0;/*paar sumir com o modale fade*/
+        pointer-events: none;/*é para deixar sem eventos seestiver escooondido*/
+      }
+  
+      #fade,
+      #modal {
+        transition: 0.5s;
+        opacity: 1;
+        pointer-events: all;
+        /*quandoa a opacidade for = 1 pode ocorerr os evenetos*/
+      }
+    </style>
+
+      <!--AQUI ESTÁ O  QUE ESCURECE A TELA -->
+      <div id="fade" class="hide"></div>
+      <!--aqui é para a opacidade-->
+      <div id="modal" class="hide">
+        <table id="tabela">
+          <thead>
+            <th>Nome</th>
+            <th>Especialidade</th>
+            <th>Hora</th>
+          </thead>
+          <tbody id="corpo">
+            <!--  AQUI FICA A TABELA QUE VAI PUXAR DOLOCALSTORAGE -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
   <script src="js/horarios.js"></script>
+  <!--<script src="js/modal.js"></script>-->
   <script src="js/deslogar.js"></script>
 </body>
 

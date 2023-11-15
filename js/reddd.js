@@ -1,8 +1,3 @@
-
-//COMECEI O FORM EM JS
-
-
-
 ///aqui fica a redução dos tickets
 
 let ticket1 = document.getElementById('ticket1');
